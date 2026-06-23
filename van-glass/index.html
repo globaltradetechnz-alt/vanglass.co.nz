@@ -2,296 +2,266 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=5">
-<meta name="theme-color" content="#86c33a">
-<title>Van Glass</title>
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/4.6.0/css/bootstrap.min.css">
-<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/js/all.min.js" defer></script>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Van auto glass replacement for all makes in Auckland NZ. Call 0800 321 800.">
+<title>Van Glass Auckland | All Makes | Van Glass NZ</title>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/4.6.0/css/bootstrap.min.css" rel="stylesheet">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
 <style>
-:root{--green:#86c33a;}
-body{font-family:"Open Sans",sans-serif;color:#444;}
-a{color:var(--green);}a:hover{color:#6aad25;text-decoration:none;}
-/* Topbar */
-.topbar{background:#1a1a1a;color:#aaa;font-size:13px;padding:6px 0;}
-.topbar a{color:#ccc;}
-/* Navbar */
-.navbar{background:#fff;box-shadow:0 2px 10px rgba(0,0,0,.08);padding:12px 0;}
-.navbar-brand img{height:50px;}
-.navbar-nav .nav-link{color:#333!important;font-weight:600;font-size:14px;padding:8px 15px!important;}
-.navbar-nav .nav-link:hover{color:var(--green)!important;}
-.btn-quote{background:var(--green);color:#fff!important;border-radius:4px;padding:8px 20px!important;font-weight:700;font-size:14px;}
-.btn-quote:hover{background:#6aad25;color:#fff!important;}
-/* Hero */
-.hero-section{position:relative;background:url('https://vanglass.co.nz/images/slider/banner-1.webp') center center/cover no-repeat;min-height:500px;display:flex;align-items:center;}
-.hero-overlay{position:absolute;inset:0;background:rgba(0,0,0,.6);}
-.hero-content{position:relative;z-index:2;}
-.hero-sub{color:var(--green);font-size:18px;font-weight:700;letter-spacing:2px;text-transform:uppercase;}
-.hero-title{color:#fff;font-size:56px;font-weight:800;line-height:1.1;margin-bottom:15px;}
-.hero-desc{color:#ddd;font-size:16px;margin-bottom:30px;}
-/* Service cards */
-.service-card{background:#fff;border:1px solid #eee;border-radius:8px;padding:30px 20px;text-align:center;margin-bottom:30px;transition:all .3s;box-shadow:0 2px 15px rgba(0,0,0,.05);}
-.service-card:hover{box-shadow:0 5px 30px rgba(0,0,0,.1);transform:translateY(-3px);}
-.service-icon{width:70px;height:70px;background:var(--green);border-radius:50%;display:flex;align-items:center;justify-content:center;margin:0 auto 20px;}
-.service-icon i{color:#fff;font-size:28px;}
-.service-card h4{font-size:18px;font-weight:700;color:#333;margin-bottom:10px;}
-.service-card p{font-size:14px;color:#777;margin:0;}
-/* Stats */
-.stats-section{background:#1a1a1a;padding:50px 0;}
-.stat-item{text-align:center;color:#fff;}
-.stat-num{font-size:48px;font-weight:800;color:var(--green);line-height:1;}
-.stat-label{font-size:14px;color:#aaa;margin-top:8px;text-transform:uppercase;letter-spacing:1px;}
-/* Why Choose Us */
-.why-section{padding:80px 0;background:#f9f9f9;}
-.why-section .sub{color:var(--green);font-size:14px;font-weight:700;text-transform:uppercase;letter-spacing:2px;}
-.why-section h2{font-size:36px;font-weight:800;color:#222;margin-bottom:20px;}
-.why-section .feature-img{border-radius:8px;width:100%;object-fit:cover;}
-.why-item{display:flex;align-items:flex-start;margin-bottom:20px;}
-.why-icon{width:40px;height:40px;background:var(--green);border-radius:50%;display:flex;align-items:center;justify-content:center;flex-shrink:0;margin-right:15px;}
-.why-icon i{color:#fff;font-size:16px;}
-/* Brand listing */
-.section-title{font-size:30px;font-weight:800;color:#222;}
-.brand-card{background:#fff;border:1px solid #eee;border-radius:8px;overflow:hidden;margin-bottom:30px;transition:all .3s;box-shadow:0 2px 10px rgba(0,0,0,.05);}
-.brand-card:hover{box-shadow:0 5px 25px rgba(0,0,0,.1);transform:translateY(-3px);}
-.brand-card img{width:100%;height:200px;object-fit:cover;}
-.brand-card-body{padding:20px;}
-.brand-card-body h4{font-size:17px;font-weight:700;color:#333;margin-bottom:8px;}
-.brand-card-body p{font-size:13px;color:#777;margin-bottom:12px;}
-.brand-card-body a.read-more{color:var(--green);font-size:13px;font-weight:600;}
-/* CTA */
-.cta-section{background:var(--green);padding:60px 0;text-align:center;}
-.cta-section h2{color:#fff;font-size:34px;font-weight:800;margin-bottom:20px;}
-.btn-cta{background:#fff;color:var(--green);font-weight:700;padding:14px 40px;border-radius:4px;font-size:16px;text-decoration:none;display:inline-block;}
-.btn-cta:hover{background:#f0f0f0;color:var(--green);text-decoration:none;}
-/* Footer */
-footer{background:#1a1a1a;color:#aaa;padding:60px 0 20px;}
-footer h5{color:#fff;font-size:16px;font-weight:700;margin-bottom:20px;}
-footer a{color:#aaa;font-size:14px;}footer a:hover{color:var(--green);}
-footer p{font-size:14px;}
-footer ul{list-style:none;padding:0;margin:0;}
-footer ul li{margin-bottom:8px;}
-.footer-bottom{border-top:1px solid #333;margin-top:40px;padding-top:20px;text-align:center;font-size:13px;}
-/* Page header */
-.page-header{position:relative;background:url('https://vanglass.co.nz/images/backgrounds/page-title.webp') center/cover;padding:60px 0;}
-.page-header-overlay{position:absolute;inset:0;background:rgba(0,0,0,.6);}
-.page-header-content{position:relative;z-index:2;}
-.page-header h2{color:#fff;font-size:36px;font-weight:800;}
-.breadcrumb{background:transparent;padding:0;margin:0;}
-.breadcrumb-item a{color:var(--green);}
-.breadcrumb-item.active,.breadcrumb-item+.breadcrumb-item::before{color:#ccc;}
-/* Sidebar */
-.sidebar-widget{background:#fff;border:1px solid #eee;border-radius:6px;padding:20px;margin-bottom:30px;}
-.sidebar-widget h5{font-size:16px;font-weight:700;color:#333;border-bottom:2px solid var(--green);padding-bottom:10px;margin-bottom:15px;}
-.sidebar-widget ul{list-style:none;padding:0;margin:0;}
-.sidebar-widget ul li{margin-bottom:6px;}
-.sidebar-widget ul li a{font-size:14px;color:#555;}
-.sidebar-widget ul li a:hover{color:var(--green);}
-/* Model cards */
-.model-card{background:#fff;border:1px solid #eee;border-radius:8px;overflow:hidden;margin-bottom:30px;}
-.model-card img{width:100%;height:220px;object-fit:cover;}
-.model-card-body{padding:20px;}
-.model-card-body h4{font-size:18px;font-weight:700;color:var(--green);}
-.model-card-body p{font-size:14px;color:#555;}
-/* Contact */
-.contact-info-card{background:#fff;border:1px solid #eee;border-radius:8px;padding:25px;margin-bottom:20px;text-align:center;}
-.contact-info-card i{font-size:30px;color:var(--green);margin-bottom:10px;}
-.contact-info-card h5{font-weight:700;color:#333;}
-.about-feature{background:#fff;border-left:4px solid var(--green);padding:20px;margin-bottom:20px;border-radius:0 8px 8px 0;}
-.about-feature h5{font-weight:700;color:#333;margin-bottom:5px;}
+.slick-slide{outline:0}
+.section{padding-top:120px;padding-bottom:120px}
+.section-sm{padding-top:70px;padding-bottom:70px}
+.section-title-border{position:relative;height:5px;width:30px;background:#86c33a;border-radius:10px;margin-bottom:20px;display:inline-block}
+.section-title-border::before{position:absolute;content:"";height:100%;width:50%;background:#86c33a;border-radius:10px;right:-60%;top:0}
+.section-title-border::after{position:absolute;content:"";height:100%;width:25%;background:#86c33a;border-radius:10px;right:-100%;top:0}
+.section-title-border.border-center{margin-left:calc(50% - 27px)}
+.section-title-border.border-white,.section-title-border.border-white::before,.section-title-border.border-white::after{background:#fff}
+.section-title-sm{font-family:'Open Sans',sans-serif;font-weight:600;color:#818385;text-transform:uppercase;letter-spacing:2px;font-size:12px}
+.bg-cover{background-size:cover;background-position:center center;background-repeat:no-repeat}
+.bg-fixed{background-attachment:fixed}
+.overlay-secondary{position:relative}
+.overlay-secondary::before{position:absolute;content:"";height:100%;width:100%;top:0;left:0;background:rgba(37,45,57,.75)}
+.top-header{background:#252d39}
+.top-header a{color:#fff;font-size:13px;text-decoration:none}
+a{color:#86c33a}
+a:hover{color:#6ba328}
+.btn-primary{background-color:#86c33a;border-color:#86c33a;color:#fff}
+.btn-primary:hover,.btn-primary:focus{background-color:#6ba328;border-color:#6ba328;color:#fff}
+.btn-outline-primary{border-color:#86c33a;color:#86c33a}
+.btn-outline-primary:hover{background-color:#86c33a;border-color:#86c33a;color:#fff}
+.navbar-light .navbar-nav .nav-link{color:#172231;font-weight:600;padding:.5rem 1.2rem}
+.navbar-light .navbar-nav .nav-link:hover{color:#86c33a}
+.hero-section{padding:200px 0;background-size:cover;background-position:center;background-repeat:no-repeat;position:relative}
+.hero-section::before{position:absolute;content:"";height:100%;width:100%;background:rgba(23,34,49,.65);top:0;left:0}
+.hero-section .container{position:relative;z-index:1}
+.hero-section h1{font-size:70px;font-weight:700;color:#f5f5f5;line-height:1.1}
+@media(max-width:767px){.hero-section{padding:120px 0}.hero-section h1{font-size:40px}}
+.banner-feature-wrapper{padding:60px 0;background:#fff}
+.banner-feature{padding:30px;text-align:center;border-radius:5px;transition:.2s ease;height:100%}
+.banner-feature i{font-size:40px;color:#86c33a;margin-bottom:15px;display:block}
+.banner-feature h4{color:#172231;font-weight:700}
+.banner-feature p{color:#818385;font-size:15px;margin:0}
+.banner-feature:hover,.banner-feature.active{background:#252d39}
+.banner-feature:hover h4,.banner-feature:hover p,.banner-feature:hover i,.banner-feature.active h4,.banner-feature.active p,.banner-feature.active i{color:#fff}
+.banner-feature.active i{color:#86c33a}
+.funfacts{overflow-x:hidden;background:#252d39;padding:80px 0}
+.funfacts h3{font-size:44px;font-weight:700;color:#fff;margin-bottom:5px}
+.funfacts p{color:rgba(255,255,255,.7);font-size:13px;text-transform:uppercase;letter-spacing:1px;margin:0}
+.funfacts .icon-box{font-size:50px;color:#86c33a;margin-bottom:15px}
+.feature-item{padding:20px;border-left:3px solid #86c33a;margin-bottom:20px;background:#f8f9fa;border-radius:0 4px 4px 0}
+.feature-item h5{color:#172231;font-weight:700;margin-bottom:5px}
+.feature-item p{color:#818385;font-size:14px;margin:0}
+.bg-gray-white{background:linear-gradient(to right,#f5f6fa 45%,#fff 0)}
+@media(max-width:767px){.bg-gray-white{background:#f5f6fa}}
+.brand-card{background:#fff;border-radius:5px;overflow:hidden;box-shadow:0 5px 20px rgba(0,0,0,.07);margin-bottom:30px;transition:.2s;height:100%}
+.brand-card:hover{box-shadow:0 10px 40px rgba(0,0,0,.12);transform:translateY(-3px)}
+.brand-card img{width:100%;height:200px;object-fit:cover;background:#f5f6fa}
+.brand-card-body{padding:20px}
+.brand-card-body h4{font-size:16px;font-weight:700;color:#172231}
+.brand-card-body h4 a{color:#172231;text-decoration:none}
+.brand-card-body h4 a:hover{color:#86c33a}
+.brand-card-body p{font-size:13px;color:#818385;margin-bottom:12px}
+.cta-section{padding:100px 0;text-align:center;position:relative;background-size:cover;background-position:center;background-attachment:fixed}
+.cta-section::before{position:absolute;content:"";height:100%;width:100%;background:rgba(37,45,57,.8);top:0;left:0}
+.cta-section .container{position:relative;z-index:1}
+.cta-section h2{color:#fff;font-size:36px;font-weight:700}
+.cta-section p{color:rgba(255,255,255,.8)}
+footer{background:#172231;color:rgba(255,255,255,.7);padding:60px 0 30px}
+footer h5{color:#fff;font-weight:700;margin-bottom:20px;padding-bottom:8px;border-bottom:2px solid #86c33a;display:inline-block}
+footer ul.list-unstyled li a{color:rgba(255,255,255,.7);text-decoration:none;font-size:14px;line-height:2}
+footer ul.list-unstyled li a:hover{color:#86c33a}
+.footer-contact-item{display:flex;align-items:flex-start;margin-bottom:12px;font-size:14px}
+.footer-contact-item i{color:#86c33a;width:20px;margin-right:10px;margin-top:3px;flex-shrink:0}
+.footer-bottom{border-top:1px solid rgba(255,255,255,.1);padding-top:20px;margin-top:30px;font-size:13px;text-align:center}
+.page-title-section{background-color:#172231;background-image:url('https://vanglass.co.nz/images/backgrounds/page-title.webp');background-size:cover;background-position:center;padding:80px 0;position:relative}
+.page-title-section::before{position:absolute;content:"";height:100%;width:100%;background:rgba(23,34,49,.75);top:0;left:0}
+.page-title-section .container{position:relative;z-index:1}
+.page-title-section h1{color:#fff;font-size:40px;font-weight:700}
+.page-title-section .breadcrumb{background:transparent;padding:0;margin:0}
+.page-title-section .breadcrumb-item a{color:#86c33a}
+.page-title-section .breadcrumb-item.active{color:rgba(255,255,255,.7)}
+.page-title-section .breadcrumb-item+.breadcrumb-item::before{color:rgba(255,255,255,.5);content:"/"}
+.content-section{padding:80px 0}
+.sidebar-widget{background:#f8f9fa;border-radius:5px;padding:25px;margin-bottom:25px}
+.sidebar-widget h5{color:#172231;font-weight:700;margin-bottom:15px;padding-bottom:8px;border-bottom:2px solid #86c33a;display:inline-block}
+.sidebar-widget ul{padding:0;list-style:none;margin:0}
+.sidebar-widget ul li a{color:#818385;text-decoration:none;font-size:14px;padding:6px 0;display:block;border-bottom:1px solid #e9ecef}
+.sidebar-widget ul li a:hover{color:#86c33a}
+.sidebar-widget ul li.active a{color:#86c33a;font-weight:700}
+.contact-info-box{padding:15px;border-left:3px solid #86c33a;background:#fff;margin-bottom:10px;border-radius:0 4px 4px 0}
+.contact-info-box i{color:#86c33a;margin-right:8px}
+.h-primary{color:#172231;font-weight:700}
+body{font-family:'Open Sans',sans-serif;color:#818385;font-size:15px;line-height:1.7}
+h1,h2,h3,h4,h5,h6{font-family:'Open Sans',sans-serif;color:#172231;line-height:1.3}
 </style>
 </head>
 <body>
-<div class="topbar">
-  <div class="container">
-    <div class="d-flex justify-content-end">
-      <a href="tel:0800-321-800"><i class="fas fa-phone-alt mr-2"></i>Call Now: 0800-321-800</a>
-    </div>
-  </div>
-</div>
-<nav class="navbar navbar-expand-lg sticky-top">
-  <div class="container">
-    <a class="navbar-brand" href="../"><img src="https://vanglass.co.nz/images/logo.png" alt="Van Glass"></a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navMenu">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navMenu">
-      <ul class="navbar-nav ml-auto align-items-lg-center">
-        <li class="nav-item"><a class="nav-link" href="../">Home</a></li>
-        <li class="nav-item"><a class="nav-link" href="../van-windscreens/">Van Windscreens</a></li>
-        <li class="nav-item"><a class="nav-link" href="../van-glass/">Van Glass</a></li>
-        <li class="nav-item"><a class="nav-link" href="../about/">About</a></li>
-        <li class="nav-item ml-lg-3"><a class="nav-link btn-quote" href="../contact/">GET A QUOTE</a></li>
+<header>
+  <div class="top-header pt-2 pb-2">
+    <div class="container">
+      <ul class="list-inline mb-0 text-right">
+        <li class="list-inline-item"><a href="tel:0800321800"><i class="fas fa-phone-alt mr-1"></i>0800-321-800</a></li>
+        <li class="list-inline-item"><a href="mailto:info@vanglass.co.nz"><i class="fas fa-envelope mr-1"></i>info@vanglass.co.nz</a></li>
       </ul>
     </div>
   </div>
-</nav>
-<div class="page-header">
-  <div class="page-header-overlay"></div>
-  <div class="container page-header-content">
-    <h2>Van Glass</h2>
-    <nav><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../">Home</a></li><li class="breadcrumb-item active">Van Glass</li></ol></nav>
-  </div>
-</div>
-<section class="py-5">
+  <nav class="navbar navbar-expand-xl navbar-light bg-white shadow-sm">
+    <div class="container">
+      <a class="navbar-brand py-4 py-xl-0" href="../">
+        <img src="https://vanglass.co.nz/images/logo.webp" alt="Van Glass" height="50" onerror="this.outerHTML='<span style=&quot;font-size:1.4rem;font-weight:700;color:#86c33a&quot;>Van Glass</span>'">
+      </a>
+      <button class="navbar-toggler border-0" type="button" data-toggle="collapse" data-target="#navMenu" aria-controls="navMenu" aria-expanded="false">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navMenu">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item"><a class="nav-link" href="../">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="../van-windscreens/">Van Windscreens</a></li>
+          <li class="nav-item"><a class="nav-link" href="../van-glass/">Van Glass</a></li>
+          <li class="nav-item"><a class="nav-link" href="../about/">About</a></li>
+        </ul>
+        <a href="../contact/" class="btn btn-primary ml-3">Get a Quote</a>
+      </div>
+    </div>
+  </nav>
+</header>
+<section class="page-title-section">
   <div class="container">
-    <div class="row"><div class="col-lg-4 col-md-6">
-  <div class="brand-card">
-    <img src="https://vanglass.co.nz/images/van-glass/fiat.png" alt="Fiat Van Glass" onerror="this.onerror=null;this.src='https://vanglass.co.nz/images/logo.png'" style="height:200px;object-fit:cover;">
-    <div class="brand-card-body">
-      <h4><a href="../van-glass/fiat/" style="color:#333;">Fiat Van Glass</a></h4>
-      <p>Ducato + more van windscreens and other glass types.</p>
-      <a href="../van-glass/fiat/" class="read-more">Read More &rarr;</a>
+    <div class="row align-items-center">
+      <div class="col-lg-7"><h1>Van Glass</h1></div>
+      <div class="col-lg-5"><ol class="breadcrumb justify-content-lg-end mb-0"><li class="breadcrumb-item"><a href="../">Home</a></li><li class="breadcrumb-item active">Van Glass</li></ol></div>
     </div>
   </div>
-</div>
-<div class="col-lg-4 col-md-6">
-  <div class="brand-card">
-    <img src="https://vanglass.co.nz/images/van-glass/ford.png" alt="Ford Van Glass" onerror="this.onerror=null;this.src='https://vanglass.co.nz/images/logo.png'" style="height:200px;object-fit:cover;">
-    <div class="brand-card-body">
-      <h4><a href="../van-glass/ford/" style="color:#333;">Ford Van Glass</a></h4>
-      <p>Econovan, Transit, Tourneo + more van windscreens and other glass types.</p>
-      <a href="../van-glass/ford/" class="read-more">Read More &rarr;</a>
-    </div>
-  </div>
-</div>
-<div class="col-lg-4 col-md-6">
-  <div class="brand-card">
-    <img src="https://vanglass.co.nz/images/van-glass/honda.png" alt="Honda Van Glass" onerror="this.onerror=null;this.src='https://vanglass.co.nz/images/logo.png'" style="height:200px;object-fit:cover;">
-    <div class="brand-card-body">
-      <h4><a href="../van-glass/honda/" style="color:#333;">Honda Van Glass</a></h4>
-      <p>Elysion, Freed, StepWagon, Mobilo, Acty + more van windscreens and other glass types.</p>
-      <a href="../van-glass/honda/" class="read-more">Read More &rarr;</a>
-    </div>
-  </div>
-</div>
-<div class="col-lg-4 col-md-6">
-  <div class="brand-card">
-    <img src="https://vanglass.co.nz/images/van-glass/hyundai.png" alt="Hyundai Van Glass" onerror="this.onerror=null;this.src='https://vanglass.co.nz/images/logo.png'" style="height:200px;object-fit:cover;">
-    <div class="brand-card-body">
-      <h4><a href="../van-glass/hyundai/" style="color:#333;">Hyundai Van Glass</a></h4>
-      <p>H1, H100, ILoad + more van windscreens and other glass types.</p>
-      <a href="../van-glass/hyundai/" class="read-more">Read More &rarr;</a>
-    </div>
-  </div>
-</div>
-<div class="col-lg-4 col-md-6">
-  <div class="brand-card">
-    <img src="https://vanglass.co.nz/images/van-glass/mazda.png" alt="Mazda Van Glass" onerror="this.onerror=null;this.src='https://vanglass.co.nz/images/logo.png'" style="height:200px;object-fit:cover;">
-    <div class="brand-card-body">
-      <h4><a href="../van-glass/mazda/" style="color:#333;">Mazda Van Glass</a></h4>
-      <p>Bongo, E2000, E2500, Friendee, Biante + more van windscreens and other glass types.</p>
-      <a href="../van-glass/mazda/" class="read-more">Read More &rarr;</a>
-    </div>
-  </div>
-</div>
-<div class="col-lg-4 col-md-6">
-  <div class="brand-card">
-    <img src="https://vanglass.co.nz/images/van-glass/mercedes.png" alt="Mercedes Van Glass" onerror="this.onerror=null;this.src='https://vanglass.co.nz/images/logo.png'" style="height:200px;object-fit:cover;">
-    <div class="brand-card-body">
-      <h4><a href="../van-glass/mercedes/" style="color:#333;">Mercedes Van Glass</a></h4>
-      <p>MB100, MB140, Viano, Vito + more van windscreens and other glass types.</p>
-      <a href="../van-glass/mercedes/" class="read-more">Read More &rarr;</a>
-    </div>
-  </div>
-</div>
-<div class="col-lg-4 col-md-6">
-  <div class="brand-card">
-    <img src="https://vanglass.co.nz/images/van-glass/mitsubishi.png" alt="Mitsubishi Van Glass" onerror="this.onerror=null;this.src='https://vanglass.co.nz/images/logo.png'" style="height:200px;object-fit:cover;">
-    <div class="brand-card-body">
-      <h4><a href="../van-glass/mitsubishi/" style="color:#333;">Mitsubishi Van Glass</a></h4>
-      <p>L300, Delica, L400 + more van windscreens and other glass types.</p>
-      <a href="../van-glass/mitsubishi/" class="read-more">Read More &rarr;</a>
-    </div>
-  </div>
-</div>
-<div class="col-lg-4 col-md-6">
-  <div class="brand-card">
-    <img src="https://vanglass.co.nz/images/van-glass/nissan.png" alt="Nissan Van Glass" onerror="this.onerror=null;this.src='https://vanglass.co.nz/images/logo.png'" style="height:200px;object-fit:cover;">
-    <div class="brand-card-body">
-      <h4><a href="../van-glass/nissan/" style="color:#333;">Nissan Van Glass</a></h4>
-      <p>Caravan, Elgrand, Urvan, Serena, Largo, Vanette, NV200, NV350, Homy + more van windscreens and other glass types.</p>
-      <a href="../van-glass/nissan/" class="read-more">Read More &rarr;</a>
-    </div>
-  </div>
-</div>
-<div class="col-lg-4 col-md-6">
-  <div class="brand-card">
-    <img src="https://vanglass.co.nz/images/van-glass/suzuki.png" alt="Suzuki Van Glass" onerror="this.onerror=null;this.src='https://vanglass.co.nz/images/logo.png'" style="height:200px;object-fit:cover;">
-    <div class="brand-card-body">
-      <h4><a href="../van-glass/suzuki/" style="color:#333;">Suzuki Van Glass</a></h4>
-      <p>Landy + more van windscreens and other glass types.</p>
-      <a href="../van-glass/suzuki/" class="read-more">Read More &rarr;</a>
-    </div>
-  </div>
-</div>
-<div class="col-lg-4 col-md-6">
-  <div class="brand-card">
-    <img src="https://vanglass.co.nz/images/van-glass/toyota.png" alt="Toyota Van Glass" onerror="this.onerror=null;this.src='https://vanglass.co.nz/images/logo.png'" style="height:200px;object-fit:cover;">
-    <div class="brand-card-body">
-      <h4><a href="../van-glass/toyota/" style="color:#333;">Toyota Van Glass</a></h4>
-      <p>Hiace, Voxy, Noah, Liteace, Townace, Estima, Previa, Custom, Granvia, Lucida, Regius, Vellfire + more van windscreens and other glass types.</p>
-      <a href="../van-glass/toyota/" class="read-more">Read More &rarr;</a>
-    </div>
-  </div>
-</div>
-<div class="col-lg-4 col-md-6">
-  <div class="brand-card">
-    <img src="https://vanglass.co.nz/images/van-glass/volkswagen.png" alt="Volkswagen Van Glass" onerror="this.onerror=null;this.src='https://vanglass.co.nz/images/logo.png'" style="height:200px;object-fit:cover;">
-    <div class="brand-card-body">
-      <h4><a href="../van-glass/volkswagen/" style="color:#333;">Volkswagen Van Glass</a></h4>
-      <p>Transporter, Caddy, Crafter, Kombi + more van windscreens and other glass types.</p>
-      <a href="../van-glass/volkswagen/" class="read-more">Read More &rarr;</a>
-    </div>
-  </div>
-</div>
-</div>
-  </div>
+</section>
+<section class="section">
+  <div class="container"><div class="row"><div class="col-lg-4 col-md-6 mb-4">
+          <div class="brand-card">
+            <img src="https://vanglass.co.nz/images/brands/fiat.webp" alt="Fiat Van Glass" loading="lazy">
+            <div class="brand-card-body">
+              <h4><a href="../van-glass/fiat/">Fiat Van Glass</a></h4>
+              <p>Ducato + more van windscreens and other glass types.</p>
+              <a href="../van-glass/fiat/" class="btn btn-outline-primary btn-sm">Fiat Van Glass</a>
+            </div>
+          </div>
+        </div><div class="col-lg-4 col-md-6 mb-4">
+          <div class="brand-card">
+            <img src="https://vanglass.co.nz/images/brands/ford.webp" alt="Ford Van Glass" loading="lazy">
+            <div class="brand-card-body">
+              <h4><a href="../van-glass/ford/">Ford Van Glass</a></h4>
+              <p>Econovan, Transit, Tourneo + more van windscreens and other glass types.</p>
+              <a href="../van-glass/ford/" class="btn btn-outline-primary btn-sm">Ford Van Glass</a>
+            </div>
+          </div>
+        </div><div class="col-lg-4 col-md-6 mb-4">
+          <div class="brand-card">
+            <img src="https://vanglass.co.nz/images/brands/honda.webp" alt="Honda Van Glass" loading="lazy">
+            <div class="brand-card-body">
+              <h4><a href="../van-glass/honda/">Honda Van Glass</a></h4>
+              <p>Elysion, Freed, StepWagon, Mobilo, Acty + more van windscreens and other glass types.</p>
+              <a href="../van-glass/honda/" class="btn btn-outline-primary btn-sm">Honda Van Glass</a>
+            </div>
+          </div>
+        </div><div class="col-lg-4 col-md-6 mb-4">
+          <div class="brand-card">
+            <img src="https://vanglass.co.nz/images/brands/hyundai.webp" alt="Hyundai Van Glass" loading="lazy">
+            <div class="brand-card-body">
+              <h4><a href="../van-glass/hyundai/">Hyundai Van Glass</a></h4>
+              <p>H1, H100, ILoad + more van windscreens and other glass types.</p>
+              <a href="../van-glass/hyundai/" class="btn btn-outline-primary btn-sm">Hyundai Van Glass</a>
+            </div>
+          </div>
+        </div><div class="col-lg-4 col-md-6 mb-4">
+          <div class="brand-card">
+            <img src="https://vanglass.co.nz/images/brands/mazda.webp" alt="Mazda Van Glass" loading="lazy">
+            <div class="brand-card-body">
+              <h4><a href="../van-glass/mazda/">Mazda Van Glass</a></h4>
+              <p>Bongo, E2000, E2500, Friendee, Biante + more van windscreens and other glass types.</p>
+              <a href="../van-glass/mazda/" class="btn btn-outline-primary btn-sm">Mazda Van Glass</a>
+            </div>
+          </div>
+        </div><div class="col-lg-4 col-md-6 mb-4">
+          <div class="brand-card">
+            <img src="https://vanglass.co.nz/images/brands/mercedes.webp" alt="Mercedes Van Glass" loading="lazy">
+            <div class="brand-card-body">
+              <h4><a href="../van-glass/mercedes/">Mercedes Van Glass</a></h4>
+              <p>MB100, MB140, Viano, Vito + more van windscreens and other glass types.</p>
+              <a href="../van-glass/mercedes/" class="btn btn-outline-primary btn-sm">Mercedes Van Glass</a>
+            </div>
+          </div>
+        </div><div class="col-lg-4 col-md-6 mb-4">
+          <div class="brand-card">
+            <img src="https://vanglass.co.nz/images/brands/mitsubishi.webp" alt="Mitsubishi Van Glass" loading="lazy">
+            <div class="brand-card-body">
+              <h4><a href="../van-glass/mitsubishi/">Mitsubishi Van Glass</a></h4>
+              <p>L300, Delica, L400 + more van windscreens and other glass types.</p>
+              <a href="../van-glass/mitsubishi/" class="btn btn-outline-primary btn-sm">Mitsubishi Van Glass</a>
+            </div>
+          </div>
+        </div><div class="col-lg-4 col-md-6 mb-4">
+          <div class="brand-card">
+            <img src="https://vanglass.co.nz/images/brands/nissan.webp" alt="Nissan Van Glass" loading="lazy">
+            <div class="brand-card-body">
+              <h4><a href="../van-glass/nissan/">Nissan Van Glass</a></h4>
+              <p>Caravan, Elgrand, Urvan, Serena, NV200, NV350 + more van windscreens and other glass types.</p>
+              <a href="../van-glass/nissan/" class="btn btn-outline-primary btn-sm">Nissan Van Glass</a>
+            </div>
+          </div>
+        </div><div class="col-lg-4 col-md-6 mb-4">
+          <div class="brand-card">
+            <img src="https://vanglass.co.nz/images/brands/suzuki.webp" alt="Suzuki Van Glass" loading="lazy">
+            <div class="brand-card-body">
+              <h4><a href="../van-glass/suzuki/">Suzuki Van Glass</a></h4>
+              <p>Landy + more van windscreens and other glass types.</p>
+              <a href="../van-glass/suzuki/" class="btn btn-outline-primary btn-sm">Suzuki Van Glass</a>
+            </div>
+          </div>
+        </div><div class="col-lg-4 col-md-6 mb-4">
+          <div class="brand-card">
+            <img src="https://vanglass.co.nz/images/brands/toyota.webp" alt="Toyota Van Glass" loading="lazy">
+            <div class="brand-card-body">
+              <h4><a href="../van-glass/toyota/">Toyota Van Glass</a></h4>
+              <p>Hiace, Voxy, Noah, Liteace, Townace, Estima, Granvia + more van windscreens and other glass types.</p>
+              <a href="../van-glass/toyota/" class="btn btn-outline-primary btn-sm">Toyota Van Glass</a>
+            </div>
+          </div>
+        </div><div class="col-lg-4 col-md-6 mb-4">
+          <div class="brand-card">
+            <img src="https://vanglass.co.nz/images/brands/volkswagen.webp" alt="Volkswagen Van Glass" loading="lazy">
+            <div class="brand-card-body">
+              <h4><a href="../van-glass/volkswagen/">Volkswagen Van Glass</a></h4>
+              <p>Transporter, Caddy, Crafter, Kombi + more van windscreens and other glass types.</p>
+              <a href="../van-glass/volkswagen/" class="btn btn-outline-primary btn-sm">Volkswagen Van Glass</a>
+            </div>
+          </div>
+        </div></div></div>
 </section>
 <footer>
   <div class="container">
     <div class="row">
-      <div class="col-lg-4 mb-4">
-        <a href="../"><img src="https://vanglass.co.nz/images/logo.png" alt="Van Glass" style="height:50px;margin-bottom:15px;"></a>
-        <p>Our family has been supplying auto glass in New Zealand since 1967. The second generation in 1989 added full service with mobile and in shop installations. We have been direct billing insurance companies for a long time. After all these years we are still NZ and family owned.</p>
-        <h5>Contact Info</h5>
-        <p><i class="fas fa-phone-alt mr-2" style="color:#86c33a;"></i>0800-321-800</p>
-        <p><i class="fas fa-map-marker-alt mr-2" style="color:#86c33a;"></i>133c Pilkington Road, Panmure 1072, Auckland</p>
+      <div class="col-lg-4 mb-5">
+        <img src="https://vanglass.co.nz/images/logo.webp" alt="Van Glass" height="45" class="mb-4" onerror="this.outerHTML='<h4 style=&quot;color:#86c33a&quot;>Van Glass</h4>'">
+        <p>Our family has been supplying auto glass in New Zealand since 1967. The second generation in 1989 added full service with mobile fitting.</p>
       </div>
-      <div class="col-lg-4 mb-4">
+      <div class="col-lg-2 col-md-4 mb-5">
         <h5>Van Windscreens</h5>
-        <ul><li><a href="../van-windscreens/fiat/">Fiat Van Windscreens</a></li>
-<li><a href="../van-windscreens/ford/">Ford Van Windscreens</a></li>
-<li><a href="../van-windscreens/honda/">Honda Van Windscreens</a></li>
-<li><a href="../van-windscreens/hyundai/">Hyundai Van Windscreens</a></li>
-<li><a href="../van-windscreens/mazda/">Mazda Van Windscreens</a></li>
-<li><a href="../van-windscreens/mercedes/">Mercedes Van Windscreens</a></li>
-<li><a href="../van-windscreens/mitsubishi/">Mitsubishi Van Windscreens</a></li>
-<li><a href="../van-windscreens/nissan/">Nissan Van Windscreens</a></li>
-<li><a href="../van-windscreens/suzuki/">Suzuki Van Windscreens</a></li>
-<li><a href="../van-windscreens/toyota/">Toyota Van Windscreens</a></li>
-<li><a href="../van-windscreens/volkswagen/">Volkswagen Van Windscreens</a></li>
-</ul>
+        <ul class="list-unstyled"><li><a href="../van-windscreens/fiat/">Fiat Van Windscreens</a></li><li><a href="../van-windscreens/ford/">Ford Van Windscreens</a></li><li><a href="../van-windscreens/honda/">Honda Van Windscreens</a></li><li><a href="../van-windscreens/hyundai/">Hyundai Van Windscreens</a></li><li><a href="../van-windscreens/mazda/">Mazda Van Windscreens</a></li><li><a href="../van-windscreens/mercedes/">Mercedes Van Windscreens</a></li></ul>
       </div>
-      <div class="col-lg-4 mb-4">
+      <div class="col-lg-2 col-md-4 mb-5">
         <h5>Van Glass</h5>
-        <ul><li><a href="../van-glass/fiat/">Fiat Van Glass</a></li>
-<li><a href="../van-glass/ford/">Ford Van Glass</a></li>
-<li><a href="../van-glass/honda/">Honda Van Glass</a></li>
-<li><a href="../van-glass/hyundai/">Hyundai Van Glass</a></li>
-<li><a href="../van-glass/mazda/">Mazda Van Glass</a></li>
-<li><a href="../van-glass/mercedes/">Mercedes Van Glass</a></li>
-<li><a href="../van-glass/mitsubishi/">Mitsubishi Van Glass</a></li>
-<li><a href="../van-glass/nissan/">Nissan Van Glass</a></li>
-<li><a href="../van-glass/suzuki/">Suzuki Van Glass</a></li>
-<li><a href="../van-glass/toyota/">Toyota Van Glass</a></li>
-<li><a href="../van-glass/volkswagen/">Volkswagen Van Glass</a></li>
-</ul>
+        <ul class="list-unstyled"><li><a href="../van-glass/fiat/">Fiat Van Glass</a></li><li><a href="../van-glass/ford/">Ford Van Glass</a></li><li><a href="../van-glass/honda/">Honda Van Glass</a></li><li><a href="../van-glass/hyundai/">Hyundai Van Glass</a></li><li><a href="../van-glass/mazda/">Mazda Van Glass</a></li><li><a href="../van-glass/mercedes/">Mercedes Van Glass</a></li></ul>
+      </div>
+      <div class="col-lg-4 col-md-4 mb-5">
+        <h5>Contact Info</h5>
+        <div class="footer-contact-item"><i class="fas fa-phone-alt"></i><span>0800-321-800</span></div>
+        <div class="footer-contact-item"><i class="fas fa-envelope"></i><span>info@vanglass.co.nz</span></div>
+        <div class="footer-contact-item"><i class="fas fa-map-marker-alt"></i><span>133c Pilkington Road, Panmure 1072, Auckland</span></div>
+        <div class="footer-contact-item"><i class="fas fa-clock"></i><span>Open 7am - 11pm, 7 days</span></div>
       </div>
     </div>
-    <div class="footer-bottom">
-      <p class="mb-0">All Rights Reserved - Copyright. 2022</p>
-    </div>
+    <div class="footer-bottom"><p class="mb-0">All Rights Reserved - Copyright. 2022 Van Glass</p></div>
   </div>
 </footer>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/4.6.0/js/bootstrap.bundle.min.js"></script>
 </body></html>
